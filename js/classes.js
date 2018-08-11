@@ -4,17 +4,17 @@ class Entity {
 		this.x = 2;
 		this.y = 5;
 	}
-// brings back the bugs after they reach end of canvas
+// Brings back the bugs after they reach end of canvas
 	update(dt) {
 		this.isOutOfBoundsX = this.x > 5;
 		this.isOutOfBoundsY = this.y < 1;
 
 	}
-
+// Draws the entity on the screen
 	render() {
 		 ctx.drawImage(Resources.get(this.sprite), this.x * 101, this.y * 83);
 	}
-
+// Checks if there is a collison between player & enemy
 	checkCollisions(playerOrEnemy) {
 		if (this.y === playerOrEnemy.y) {
 			if (this.x >= playerOrEnemy.x - 0.5 && this.x <= playerOrEnemy.x + 0.5) {
@@ -32,7 +32,7 @@ class Player extends Entity {
 	constructor() {
 		super();
 		this.sprite += 'char-boy.png';
-		this.moving = false;
+		this.moving = false; //
 		this.win = false;
 	}
 
@@ -43,12 +43,12 @@ update(dt) {
 		this.win = true;
 	}
 }
-
+// Draws the player on the screen
 render() {
 	super.render();
 	this.moving = false;
 }
-
+// Moves the player based on key pressed
 	handleInput(input) {
 		switch (input) {
 			case 'left':
