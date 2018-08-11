@@ -18,7 +18,7 @@ Basic Functionality
 * Vehicle-player collisions happen logically (not too early or too late)
 * Vehicle-player collision resets the game
 * Something happens when player wins
-For more, refer to this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric).
+* For more, refer to this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric).
 
 ## How to play
 In this game you have a Player and Enemies (Bugs). The goal of the player is to reach the water, without colliding into any one of the enemies. 
