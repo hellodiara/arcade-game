@@ -1,3 +1,33 @@
 body {
     text-align: center;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game_title {
+    font-family: 'Monoton', sans-serif;
+    font-size: 48px;
+    color: #5068D3;
+}
+
+/*-----------FOOTER------------*/
+footer {
+    background-color: #d1c1be;
+    color: #fffaee;
+    padding: 24px;
+    text-align: center;
+}
+
+footer a {
+    color: #f5f5f5;
+}
+
+footer a:hover {
+    color: #433F5D;
+    text-decoration: none;
+}

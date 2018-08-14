@@ -39,8 +39,9 @@ class Player extends Entity {
 update(dt) {
 	super.update();
 	if (this.isOutOfBoundsY && !this.moving && !this.win) {
-		alert("Win");
+		alert("You won!");
 		this.win = true;
+		// add what happens when player wins
 	}
 }
 // Draws the player on the screen
@@ -84,7 +85,7 @@ class Enemy extends Entity {
 			this.x = -1; 
 		} 
 		else {
-			this.x += dt; //optional:uses a random/or faster pace
+			this.x += dt; //optional: use a random/or faster pace
 		}
 	}
 }
