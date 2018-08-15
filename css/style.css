@@ -16,6 +16,9 @@ body {
     font-size: 48px;
     color: #5068D3;
 }
+h2 {
+    font-family: Audiowide, sans-serif;
+}
 
 /*-----------FOOTER------------*/
 footer {
