@@ -3,12 +3,18 @@ FEND-arcade-game
 Front-End Project (JS/HTML/CSS) for Udacity Front-End Nannodegree (Project 3)
 
 ## Table of Contents
+* [Getting Started](#getting-started)
 * [Project Requirements](#project-requirements)
 * [How To Play](#how-to-play)
 * [Play](#play)
 * [Game Screenshot](#screenshot)
 * [Credits](#credits)
 * [To Do List](#to-do)
+
+## Getting Started
+1. Download or clone the repository
+2. In the project folder, open the [index.html](https://github.com/hellodiara/arcade-game/blob/master/index.html) file with your browser of choice. 
+3. Play!
 
 ## Project Requirements
 Basic Functionality 
