@@ -13,18 +13,18 @@ class Entity {
 	}
 // Draws the entity on the screen
 	render() {
-		 ctx.drawImage(Resources.get(this.sprite), this.x * 101, this.y * 83);
+		 ctx.drawImage(Resources.get(this.sprite), this.x * 101, this.y * 85);
 	}
 // Checks if there is a collison between player & enemy
 	checkCollisions(playerOrEnemy) {
 		if (this.y === playerOrEnemy.y) {
 			if (this.x >= playerOrEnemy.x - 0.75 && this.x <= playerOrEnemy.x + 0.75) {
 				return true;
-				this.score --;
 			}
 		} 
 		else {
 			return false;
+			// reset game here
 		}
 	}
 }
@@ -39,23 +39,21 @@ class Player extends Entity {
 		this.score = 0;
 	}
 
-update(dt) {
-	super.update();
-	if (this.isOutOfBoundsY && !this.moving && !this.win) {
-		alert("You won!");
-		this.win = true;
-		// Player gets back to original position
-		this.x = 2;
-		this.y = 5;
-		this.score ++; // Score increments
-
+	update(dt) {
+		super.update();
+		if (this.isOutOfBoundsY && !this.moving) {
+			this.win = true;
+			// Player gets back to original position
+			this.x = 2;
+			this.y = 5;
+			this.score++; // Score increments
+		}
 	}
-}
-// Draws the player on the screen
-render() {
-	super.render();
-	this.moving = false;
-}
+	// Draws the player on the screen
+	render() {
+		super.render();
+		this.moving = false;
+	}
 // Moves the player based on key pressed
 	handleInput(input) {
 		switch (input) {
@@ -93,7 +91,7 @@ class Enemy extends Entity {
 			this.x = -1; 
 		} 
 		else {
-			this.x += dt * 1; 
+			this.x += dt * 1.5; 
 		}
 	}
 }
