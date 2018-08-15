@@ -35,6 +35,7 @@ class Player extends Entity {
 		this.sprite += 'char-boy.png';
 		this.moving = false; //
 		this.win = false;
+		this.score = 0;
 	}
 
 update(dt) {
@@ -42,7 +43,11 @@ update(dt) {
 	if (this.isOutOfBoundsY && !this.moving && !this.win) {
 		alert("You won!");
 		this.win = true;
-		// add what happens when player wins
+		// Player gets back to original position
+		this.x = 2;
+		this.y = 5;
+		this.score = this.score + 1;
+
 	}
 }
 // Draws the player on the screen
@@ -78,6 +83,7 @@ class Enemy extends Entity {
 		this.sprite += 'enemy-bug.png';
 		this.x = x;
 		this.y = y;
+		this.speed = 0;
 	}
 
 	update(dt) {
@@ -90,4 +96,6 @@ class Enemy extends Entity {
 		}
 	}
 }
+
+
 

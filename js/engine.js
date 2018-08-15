@@ -59,7 +59,11 @@ function checkCollisions() {
             enemy.update(dt);
          });
          player.update();
+
+        document.getElementById('score').innerHTML = player.score;
+
     }
+
 
     function render() {
 
