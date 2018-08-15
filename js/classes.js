@@ -20,6 +20,7 @@ class Entity {
 		if (this.y === playerOrEnemy.y) {
 			if (this.x >= playerOrEnemy.x - 0.75 && this.x <= playerOrEnemy.x + 0.75) {
 				return true;
+				this.score --;
 			}
 		} 
 		else {
@@ -46,7 +47,7 @@ update(dt) {
 		// Player gets back to original position
 		this.x = 2;
 		this.y = 5;
-		this.score = this.score + 1;
+		this.score ++; // Score increments
 
 	}
 }
@@ -92,7 +93,7 @@ class Enemy extends Entity {
 			this.x = -1; 
 		} 
 		else {
-			this.x += dt; //optional: use a random/or faster pace
+			this.x += dt * 1; 
 		}
 	}
 }

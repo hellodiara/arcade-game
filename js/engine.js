@@ -48,8 +48,13 @@ var Engine = (function(global) {
 function checkCollisions() {
     allEnemies.forEach(enemy => {
         if(enemy.checkCollisions(player) || player.checkCollisions(enemy)) {
+            // Player gets back to original position
             player.y = 5;
             player.x = 2;
+            // Score decrements only if it's > 0
+            if (player.score > 0 ) {
+                player.score--;
+            }
         }
     });
 }
@@ -59,7 +64,7 @@ function checkCollisions() {
             enemy.update(dt);
          });
          player.update();
-
+         // Gets the score
         document.getElementById('score').innerHTML = player.score;
 
     }
