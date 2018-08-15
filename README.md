@@ -12,7 +12,9 @@ Front-End Project (JS/HTML/CSS) for Udacity Front-End Nannodegree (Project 3)
 * [To Do List](#to-do)
 
 ## Getting Started
-1. Download or clone the repository
+1. Download or clone the repository onto your local machine:
+* [Zip file](https://github.com/hellodiara/arcade-game/archive/master.zip)
+* [Git clone](https://github.com/hellodiara/arcade-game.git)
 2. In the project folder, open the [index.html](https://github.com/hellodiara/arcade-game/blob/master/index.html) file with your browser of choice. 
 3. Play!
 
