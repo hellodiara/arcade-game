@@ -82,7 +82,7 @@ class Enemy extends Entity {
 		this.sprite += 'enemy-bug.png';
 		this.x = x;
 		this.y = y;
-		this.speed = 0;
+		this.speed = 1.5;
 	}
 
 	update(dt) {
@@ -91,7 +91,7 @@ class Enemy extends Entity {
 			this.x = -1; 
 		} 
 		else {
-			this.x += dt * 1.5; 
+			this.x += dt * this.speed; 
 		}
 	}
 }
