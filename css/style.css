@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: #c2cefc;
+    background-color: white;
     font-family: Lato, sans-serif;
 }
 
@@ -14,7 +14,7 @@ body {
 .game_title {
     font-family: 'Monoton', sans-serif;
     font-size: 48px;
-    color: #5068D3;
+    color: #606060;
 }
 h2 {
     font-family: Audiowide, sans-serif;
@@ -22,7 +22,7 @@ h2 {
 
 /*-----------FOOTER------------*/
 footer {
-    background-color: #d1c1be;
+    background-color: #BEBEBD;
     color: #fffaee;
     padding: 24px;
     text-align: center;
